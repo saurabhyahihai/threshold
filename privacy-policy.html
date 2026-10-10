@@ -1,480 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Privacy Policy — Threshold</title>
+    <title>Privacy Policy — Threshold</title>
 
-  <meta
-    name="description"
-    content="Privacy Policy for Threshold — an offline-first tarot application."
-  />
+    <meta name="description" content="Privacy Policy for Threshold — an offline-first tarot application." />
 
-  <style>
-    :root {
-      --bg: #0b0c16;
-      --surface: #121426;
-      --border: #2b3152;
-      --accent: #c1804a;
-      --accent-soft: #d49a68;
-      --text: #ece2c8;
-      --text-muted: #aaaabd;
-      --white: #f7f5ef;
-    }
+    <style>
+        :root {
+            --bg: #0b0c16;
+            --surface: #121426;
+            --border: #2b3152;
+            --accent: #c1804a;
+            --accent-soft: #d49a68;
+            --text: #ece2c8;
+            --text-muted: #aaaabd;
+            --white: #f7f5ef;
+        }
 
-    * {
-      box-sizing: border-box;
-    }
+        * {
+            box-sizing: border-box;
+        }
 
-    html {
-      scroll-behavior: smooth;
-    }
+        html {
+            scroll-behavior: smooth;
+        }
 
-    body {
-      margin: 0;
-      background:
-        radial-gradient(
-          circle at 50% -10%,
-          rgba(193, 128, 74, 0.08),
-          transparent 35%
-        ),
-        var(--bg);
-      color: var(--text);
-      font-family:
-        Inter,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Helvetica,
-        Arial,
-        sans-serif;
-      line-height: 1.75;
-    }
+        body {
+            margin: 0;
+            background:
+                radial-gradient(circle at 50% -10%,
+                    rgba(193, 128, 74, 0.08),
+                    transparent 35%),
+                var(--bg);
+            color: var(--text);
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+            line-height: 1.75;
+        }
 
-    .container {
-      width: min(900px, calc(100% - 32px));
-      margin: 0 auto;
-      padding: 60px 0 80px;
-    }
+        .container {
+            width: min(900px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 60px 0 80px;
+        }
 
-    header {
-      text-align: center;
-      margin-bottom: 48px;
-    }
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
 
-    h1 {
-      margin: 0;
-      color: var(--white);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(2.2rem, 6vw, 3.5rem);
-      font-weight: 500;
-      letter-spacing: -0.03em;
-    }
+        h1 {
+            margin: 0;
+            color: var(--white);
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(2.2rem, 6vw, 3.5rem);
+            font-weight: 500;
+            letter-spacing: -0.03em;
+        }
 
-    .subtitle {
-      margin: 10px 0 0;
-      color: var(--accent-soft);
-      font-size: 0.95rem;
-      letter-spacing: 0.04em;
-    }
+        .subtitle {
+            margin: 10px 0 0;
+            color: var(--accent-soft);
+            font-size: 0.95rem;
+            letter-spacing: 0.04em;
+        }
 
-    .intro {
-      background:
-        linear-gradient(
-          135deg,
-          rgba(193, 128, 74, 0.09),
-          rgba(24, 27, 50, 0.8)
-        );
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--accent);
-      border-radius: 14px;
-      padding: 22px 24px;
-      margin-bottom: 36px;
-      color: var(--text-muted);
-    }
+        .intro {
+            background:
+                linear-gradient(135deg,
+                    rgba(193, 128, 74, 0.09),
+                    rgba(24, 27, 50, 0.8));
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent);
+            border-radius: 14px;
+            padding: 22px 24px;
+            margin-bottom: 36px;
+            color: var(--text-muted);
+        }
 
-    main {
-      background: rgba(18, 20, 38, 0.78);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: clamp(24px, 5vw, 48px);
-      box-shadow: 0 20px 70px rgba(0, 0, 0, 0.22);
-    }
+        main {
+            background: rgba(18, 20, 38, 0.78);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            padding: clamp(24px, 5vw, 48px);
+            box-shadow: 0 20px 70px rgba(0, 0, 0, 0.22);
+        }
 
-    section {
-      margin-bottom: 38px;
-    }
+        section {
+            margin-bottom: 38px;
+        }
 
-    section:last-child {
-      margin-bottom: 0;
-    }
+        section:last-child {
+            margin-bottom: 0;
+        }
 
-    h2 {
-      margin: 0 0 14px;
-      color: var(--white);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 1.45rem;
-      font-weight: 500;
-    }
+        h2 {
+            margin: 0 0 14px;
+            color: var(--white);
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 1.45rem;
+            font-weight: 500;
+        }
 
-    p {
-      margin: 0 0 14px;
-      color: var(--text-muted);
-    }
+        p {
+            margin: 0 0 14px;
+            color: var(--text-muted);
+        }
 
-    p:last-child {
-      margin-bottom: 0;
-    }
+        p:last-child {
+            margin-bottom: 0;
+        }
 
-    ul {
-      margin: 12px 0 16px;
-      padding-left: 22px;
-      color: var(--text-muted);
-    }
+        ul {
+            margin: 12px 0 16px;
+            padding-left: 22px;
+            color: var(--text-muted);
+        }
 
-    li {
-      margin: 5px 0;
-    }
+        li {
+            margin: 5px 0;
+        }
 
-    strong {
-      color: var(--text);
-      font-weight: 600;
-    }
+        strong {
+            color: var(--text);
+            font-weight: 600;
+        }
 
-    a {
-      color: var(--accent-soft);
-      text-decoration: none;
-      border-bottom: 1px solid rgba(212, 154, 104, 0.35);
-    }
+        a {
+            color: var(--accent-soft);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(212, 154, 104, 0.35);
+        }
 
-    a:hover {
-      color: var(--white);
-      border-bottom-color: var(--accent-soft);
-    }
+        a:hover {
+            color: var(--white);
+            border-bottom-color: var(--accent-soft);
+        }
 
-    .contact {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 10px 16px;
-      border: 1px solid var(--accent);
-      border-radius: 10px;
-      color: var(--accent-soft);
-    }
+        .contact {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 10px 16px;
+            border: 1px solid var(--accent);
+            border-radius: 10px;
+            color: var(--accent-soft);
+        }
 
-    .contact:hover {
-      background: rgba(193, 128, 74, 0.08);
-    }
+        .contact:hover {
+            background: rgba(193, 128, 74, 0.08);
+        }
 
-    footer {
-      text-align: center;
-      margin-top: 30px;
-      color: #73758c;
-      font-size: 0.85rem;
-    }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #73758c;
+            font-size: 0.85rem;
+        }
 
-    .divider {
-      height: 1px;
-      background: var(--border);
-      margin: 40px 0;
-    }
+        .divider {
+            height: 1px;
+            background: var(--border);
+            margin: 40px 0;
+        }
 
-    @media (max-width: 600px) {
-      .container {
-        width: min(100% - 20px, 900px);
-        padding: 36px 0 50px;
-      }
+        @media (max-width: 600px) {
+            .container {
+                width: min(100% - 20px, 900px);
+                padding: 36px 0 50px;
+            }
 
-      main {
-        padding: 24px 20px;
-        border-radius: 14px;
-      }
+            main {
+                padding: 24px 20px;
+                border-radius: 14px;
+            }
 
-      .intro {
-        padding: 18px;
-      }
+            .intro {
+                padding: 18px;
+            }
 
-      section {
-        margin-bottom: 32px;
-      }
-    }
-  </style>
+            section {
+                margin-bottom: 32px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div class="container">
+    <div class="container">
 
-    <header>
-      <h1>Privacy Policy</h1>
-      <div class="subtitle">
-        Threshold · Last updated: August 13, 2026
-      </div>
-    </header>
+        <header>
+            <h1>Privacy Policy</h1>
+            <div class="subtitle">
+                Threshold · Last updated: October 10, 2026
+            </div>
+        </header>
 
-    <div class="intro">
-      Threshold is an offline-first tarot application designed for
-      card readings, tarot learning, and personal reflection.
-      We value your privacy and have designed Threshold so that its
-      core features can be used without creating an account or
-      providing personal information to us.
+        <div class="intro">
+            Threshold is an offline-first tarot application designed for
+            card readings, tarot learning, and personal reflection.
+            We value your privacy and have designed Threshold so that its
+            core features can be used without creating an account or
+            providing personal information to us.
+        </div>
+
+        <main>
+
+            <section>
+                <h2>1. Information Stored by Threshold</h2>
+
+                <p>
+                    Threshold does not require you to create an account and does
+                    not directly collect your name, email address, phone number,
+                    contacts, precise location, or other personal information.
+                </p>
+
+                <p>
+                    Information created while using the app may be stored locally
+                    on your device so that Threshold can provide its features.
+                    This may include:
+                </p>
+
+                <ul>
+                    <li>Tarot draws and reading history</li>
+                    <li>Daily draw information</li>
+                    <li>Cards explored in the guide</li>
+                    <li>Statistics and progress</li>
+                    <li>Gem balance and related app activity</li>
+                    <li>App preferences and settings</li>
+                </ul>
+
+                <p>
+                    This information is not transmitted to us by Threshold's core
+                    functionality.
+                </p>
+
+                <p>
+                    If you uninstall the app or clear its application data,
+                    locally stored information may be deleted by your device's
+                    operating system.
+                </p>
+            </section>
+
+            <section>
+                <h2>2. Advertising</h2>
+
+                <p>
+                    Threshold displays advertisements using
+                    <strong>Google AdMob</strong>, a third-party advertising
+                    service provided by Google.
+                </p>
+
+                <p>
+                    Although Threshold itself does not require personal
+                    information from you, the Google Mobile Ads SDK may
+                    automatically collect and process certain information from
+                    your device and your interactions with advertisements and
+                    the app.
+                </p>
+
+                <p>
+                    Depending on Google's current SDK configuration and applicable
+                    settings, this may include:
+                </p>
+
+                <ul>
+                    <li>IP address</li>
+                    <li>Advertising or other device identifiers</li>
+                    <li>Information about interactions with the app and advertisements</li>
+                    <li>Diagnostic and performance information</li>
+                    <li>
+                        Information used to provide, measure, maintain, and protect
+                        advertising services
+                    </li>
+                    <li>
+                        General location information that may be inferred from an
+                        IP address
+                    </li>
+                </ul>
+
+                <p>
+                    Google may use this information for purposes including
+                    advertising, analytics, fraud prevention, and improving its
+                    advertising services.
+                </p>
+
+                <p>
+                    Threshold does not control information collected by Google
+                    through its advertising services. Google's processing of such
+                    information is governed by Google's own privacy policies and
+                    terms.
+                </p>
+            </section>
+
+            <section>
+                <h2>3. Rewarded Advertisements</h2>
+
+                <p>
+                    Threshold may offer rewarded advertisements that allow you
+                    to receive in-app gems after attempting to view a rewarded
+                    advertisement.
+                </p>
+
+                <p>
+                    Threshold does not require or store your personal information
+                    as a condition of receiving these rewards.
+                </p>
+
+                <p>
+                    The advertising provider may process information associated
+                    with the advertisement request and viewing of the advertisement
+                    as described in this policy.
+                </p>
+            </section>
+
+            <section>
+                <h2>4. Third-Party Advertising Services & Google Policies</h2>
+
+                <p>
+                    Threshold uses <strong>Google AdMob</strong>, an advertising service
+                    provided by Google LLC (or Google Ireland Limited for users in the EEA),
+                    for in-app advertisement delivery, analytics, security, and fraud prevention.
+                </p>
+
+                <p>
+                    To learn more about how Google handles and protects data collected through
+                    mobile applications, please review:
+                </p>
+
+                <ul>
+                    <li>
+                        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+                            Google Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">
+                            How Google Uses Information From Sites or Apps That Use Our Services
+                        </a>
+                    </li>
+                </ul>
+
+                <p>
+                    Threshold does not sell your personal data for monetary compensation.
+                </p>
+            </section>
+
+            <section>
+                <h2>5. European Economic Area (EEA), UK & Switzerland Users (GDPR)</h2>
+
+                <p>
+                    If you reside in the European Economic Area (EEA), United Kingdom, or Switzerland,
+                    the processing of your information by our advertising partner is governed by the
+                    General Data Protection Regulation (GDPR) and the UK GDPR.
+                </p>
+
+                <p><strong>Legal Bases for Processing:</strong></p>
+                <ul>
+                    <li>
+                        <strong>Consent (Article 6(1)(a) GDPR):</strong> When you consent through the Google
+                        User Messaging Platform (UMP) consent dialog presented upon launching the app, Google
+                        processes device identifiers and usage data to serve personalized advertisements.
+                    </li>
+                    <li>
+                        <strong>Legitimate Interests (Article 6(1)(f) GDPR):</strong> Essential ad delivery,
+                        fraud prevention, bot detection, frequency capping, and ad measurement are processed
+                        based on legitimate business and operational interests.
+                    </li>
+                </ul>
+
+                <p><strong>Your Rights Under GDPR:</strong></p>
+                <p>
+                    You have the right to request access to, rectification of, or erasure of personal data,
+                    the right to restrict processing, the right to object to processing, and the right to data portability.
+                </p>
+
+                <p><strong>Right to Withdraw Consent:</strong></p>
+                <p>
+                    You have the absolute right to withdraw or modify your consent choices at any time.
+                    Withdrawing consent does not affect the lawfulness of processing carried out prior to withdrawal.
+                    You can easily update your choices directly in the app at any time via
+                    <strong>Settings &rarr; Privacy & Ad Policy &rarr; Privacy Settings</strong>.
+                </p>
+
+                <p>
+                    You also have the right to lodge a complaint with your local supervisory Data Protection
+                    Authority (DPA) in your EU Member State or the Information Commissioner's Office (ICO) in the UK.
+                </p>
+            </section>
+
+            <section>
+                <h2>6. United States State Privacy Rights (CCPA / CPRA & Other States)</h2>
+
+                <p>
+                    Residents of California (under the California Consumer Privacy Act as amended by the California
+                    Privacy Rights Act, "CCPA/CPRA"), Virginia, Colorado, Connecticut, Utah, Texas, and other applicable
+                    states have specific privacy rights regarding personal information.
+                </p>
+
+                <p><strong>Categories of Personal Information Processed:</strong></p>
+                <ul>
+                    <li>Identifiers (e.g., Google Advertising ID, IP address)</li>
+                    <li>Internet and mobile network activity (interactions with ads and ad requests)</li>
+                    <li>Inferred coarse location (derived from IP address at city/country level)</li>
+                </ul>
+
+                <p><strong>Notice of Right to Opt-Out of Sale / Sharing / Targeted Advertising:</strong></p>
+                <p>
+                    Threshold does not sell personal information in exchange for money. However, third-party advertising
+                    networks such as Google AdMob may process online identifiers and usage data across different apps
+                    to deliver cross-context behavioral advertising (targeted advertising). Under certain state laws,
+                    this activity may be classified as a "sale", "share", or "targeted advertising".
+                </p>
+
+                <p>
+                    You have the right to opt out of targeted advertising and the sharing of your data for cross-context
+                    behavioral advertising at any time through our in-app privacy controls or mobile device settings.
+                </p>
+
+                <p><strong>Non-Discrimination:</strong></p>
+                <p>
+                    We will never discriminate against you, charge different fees, or deny app functionality for
+                    exercising your privacy rights.
+                </p>
+            </section>
+
+            <section>
+                <h2>7. In-App Consent Management & Your Privacy Choices</h2>
+
+                <p><strong>In-App Privacy Settings (Google UMP):</strong></p>
+                <p>
+                    Threshold includes a dedicated consent management interface powered by the Google User Messaging
+                    Platform (UMP). You can review, update, or revoke your consent preferences at any time by navigating to:
+                </p>
+                <p style="padding-left: 14px; border-left: 2px solid var(--accent); color: var(--text);">
+                    <strong>Threshold App &rarr; Settings &rarr; Privacy & Ad Policy &rarr; Privacy Settings</strong>
+                </p>
+                <p>
+                    If your region is subject to consent requirements (such as the EEA, UK, or relevant US states),
+                    this option will reopen the official privacy options dialog to adjust your preferences immediately.
+                </p>
+
+                <p><strong>Mobile Device Controls:</strong></p>
+                <p>
+                    You can also adjust system-level advertising controls directly in your Android settings:
+                </p>
+                <ul>
+                    <li>Open your device <strong>Settings</strong></li>
+                    <li>Navigate to <strong>Security & Privacy</strong> (or <strong>Google</strong>) &rarr; <strong>Privacy</strong> &rarr; <strong>Ads</strong></li>
+                    <li>Select <strong>Delete advertising ID</strong> or <strong>Reset advertising ID</strong></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>8. Internet Connection & Offline Functionality</h2>
+
+                <p>
+                    The core tarot functionality of Threshold—including tarot draws, card interpretations, encyclopedia
+                    guides, and reading history—is engineered to operate completely offline.
+                </p>
+
+                <p>
+                    An internet connection is required solely for third-party advertising services (loading rewarded and
+                    banner ads) and retrieving regulatory consent forms. If you are offline or ad inventory is unavailable,
+                    all core tarot features remain accessible.
+                </p>
+            </section>
+
+            <section>
+                <h2>9. Data Security & Storage</h2>
+
+                <p>
+                    Because Threshold's reading history, daily cards, and gem balance are stored locally on your device
+                    using secure local SQLite and storage APIs, their security is tied directly to your device's security
+                    measures.
+                </p>
+
+                <p>
+                    Threshold does not maintain remote user databases or transmit your reading logs to external servers.
+                    If you uninstall the application or clear application data via your device settings, your local
+                    reading history will be deleted.
+                </p>
+            </section>
+
+            <section>
+                <h2>10. Children's Privacy</h2>
+
+                <p>
+                    Threshold is not directed to children under 13 years of age (or under 16 in the European Economic Area).
+                    We do not knowingly collect personal data from children. The Google Mobile Ads SDK in Threshold is
+                    configured with teenager/general audience content ratings.
+                </p>
+
+                <p>
+                    If you believe that a child has provided personal information to us directly, please contact us at
+                    the address below so that we may take prompt corrective action.
+                </p>
+            </section>
+
+            <section>
+                <h2>11. Changes to This Privacy Policy</h2>
+
+                <p>
+                    We may update this Privacy Policy from time to time to reflect changes in legal requirements,
+                    advertising network practices, or app features. When updates occur, the "Last updated" date at
+                    the top of this policy will be revised.
+                </p>
+            </section>
+
+            <section>
+                <h2>12. Contact Information</h2>
+
+                <p>
+                    If you have questions, inquiries, or requests regarding this Privacy Policy or Threshold's privacy
+                    practices, please contact us at:
+                </p>
+
+                <a class="contact" href="mailto:saurabhyahihai@gmail.com">
+                    saurabhyahihai@gmail.com
+                </a>
+            </section>
+
+            <div class="divider"></div>
+
+            <section>
+                <p>
+                    Threshold is intended as a tool for tarot exploration, learning, and personal reflection.
+                    Tarot readings are not professional psychological, medical, legal, or financial advice and
+                    should not be relied upon as the sole basis for important life decisions.
+                </p>
+            </section>
+
+        </main>
+
+        <footer>
+            © 2026 Threshold · Built with privacy in mind.
+        </footer>
+
     </div>
-
-    <main>
-
-      <section>
-        <h2>1. Information Stored by Threshold</h2>
-
-        <p>
-          Threshold does not require you to create an account and does
-          not directly collect your name, email address, phone number,
-          contacts, precise location, or other personal information.
-        </p>
-
-        <p>
-          Information created while using the app may be stored locally
-          on your device so that Threshold can provide its features.
-          This may include:
-        </p>
-
-        <ul>
-          <li>Tarot draws and reading history</li>
-          <li>Daily draw information</li>
-          <li>Cards explored in the guide</li>
-          <li>Statistics and progress</li>
-          <li>Gem balance and related app activity</li>
-          <li>App preferences and settings</li>
-        </ul>
-
-        <p>
-          This information is not transmitted to us by Threshold's core
-          functionality.
-        </p>
-
-        <p>
-          If you uninstall the app or clear its application data,
-          locally stored information may be deleted by your device's
-          operating system.
-        </p>
-      </section>
-
-      <section>
-        <h2>2. Advertising</h2>
-
-        <p>
-          Threshold displays advertisements using
-          <strong>Google AdMob</strong>, a third-party advertising
-          service provided by Google.
-        </p>
-
-        <p>
-          Although Threshold itself does not require personal
-          information from you, the Google Mobile Ads SDK may
-          automatically collect and process certain information from
-          your device and your interactions with advertisements and
-          the app.
-        </p>
-
-        <p>
-          Depending on Google's current SDK configuration and applicable
-          settings, this may include:
-        </p>
-
-        <ul>
-          <li>IP address</li>
-          <li>Advertising or other device identifiers</li>
-          <li>Information about interactions with the app and advertisements</li>
-          <li>Diagnostic and performance information</li>
-          <li>
-            Information used to provide, measure, maintain, and protect
-            advertising services
-          </li>
-          <li>
-            General location information that may be inferred from an
-            IP address
-          </li>
-        </ul>
-
-        <p>
-          Google may use this information for purposes including
-          advertising, analytics, fraud prevention, and improving its
-          advertising services.
-        </p>
-
-        <p>
-          Threshold does not control information collected by Google
-          through its advertising services. Google's processing of such
-          information is governed by Google's own privacy policies and
-          terms.
-        </p>
-      </section>
-
-      <section>
-        <h2>3. Rewarded Advertisements</h2>
-
-        <p>
-          Threshold may offer rewarded advertisements that allow you
-          to receive in-app gems after attempting to view a rewarded
-          advertisement.
-        </p>
-
-        <p>
-          Threshold does not require or store your personal information
-          as a condition of receiving these rewards.
-        </p>
-
-        <p>
-          The advertising provider may process information associated
-          with the advertisement request and viewing of the advertisement
-          as described in this policy.
-        </p>
-      </section>
-
-      <section>
-        <h2>4. Third-Party Services</h2>
-
-        <p>
-          Threshold currently uses the following third-party service
-          for advertising:
-        </p>
-
-        <ul>
-          <li>
-            <strong>Google AdMob</strong> — advertising and related
-            measurement, security, and fraud-prevention services.
-          </li>
-        </ul>
-
-        <p>
-          Third-party services may process information according to
-          their own privacy policies. We recommend reviewing Google's
-          privacy documentation to understand how Google handles data
-          in connection with its advertising services.
-        </p>
-
-        <p>
-          Threshold does not sell your personal information.
-        </p>
-      </section>
-
-      <section>
-        <h2>5. Internet Connection</h2>
-
-        <p>
-          The core tarot functionality of Threshold is designed to work
-          offline.
-        </p>
-
-        <p>
-          An internet connection may be required for certain
-          third-party functionality, including loading advertisements.
-        </p>
-
-        <p>
-          If an advertisement cannot be loaded, the core tarot features
-          remain available.
-        </p>
-      </section>
-
-      <section>
-        <h2>6. Data Security</h2>
-
-        <p>
-          Because Threshold's core user-created information is stored
-          locally on your device, its security is also affected by the
-          security of your device and operating system.
-        </p>
-
-        <p>
-          Information transmitted by third-party services such as
-          Google Mobile Ads is handled according to their security
-          practices.
-        </p>
-      </section>
-
-      <section>
-        <h2>7. Children's Privacy</h2>
-
-        <p>
-          Threshold is not specifically designed for children.
-        </p>
-
-        <p>
-          We do not knowingly collect personal information from children
-          through Threshold. If you believe that a child has provided
-          personal information to us directly, please contact us using
-          the address below.
-        </p>
-      </section>
-
-      <section>
-        <h2>8. Your Choices</h2>
-
-        <p>
-          You can choose whether to use rewarded advertisements when
-          they are offered.
-        </p>
-
-        <p>
-          You can also manage certain advertising and privacy settings
-          through your Android device and Google's available advertising
-          controls. The availability of particular controls may vary
-          by device, account, region, and applicable law.
-        </p>
-      </section>
-
-      <section>
-        <h2>9. Changes to This Privacy Policy</h2>
-
-        <p>
-          We may update this Privacy Policy when Threshold's features,
-          advertising services, or data practices change.
-        </p>
-
-        <p>
-          When changes are made, the "Last updated" date at the top of
-          this policy will be updated accordingly.
-        </p>
-
-        <p>
-          We encourage you to review this policy periodically.
-        </p>
-      </section>
-
-      <section>
-        <h2>10. Contact</h2>
-
-        <p>
-          If you have questions, concerns, or requests regarding this
-          Privacy Policy or Threshold's privacy practices, you can
-          contact us at:
-        </p>
-
-        <a
-          class="contact"
-          href="mailto:saurabhyahihai@gmail.com"
-        >
-          saurabhyahihai@gmail.com
-        </a>
-      </section>
-
-      <div class="divider"></div>
-
-      <section>
-        <p>
-          Threshold is intended as a tool for tarot exploration,
-          learning, and personal reflection. Tarot readings are not
-          professional advice and should not be relied upon as the sole
-          basis for important decisions.
-        </p>
-      </section>
-
-    </main>
-
-    <footer>
-      © 2026 Threshold · Built with privacy in mind.
-    </footer>
-
-  </div>
 </body>
+
 </html>
